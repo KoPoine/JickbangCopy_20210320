@@ -2,10 +2,30 @@ package com.example.jickbangcopy_20210320
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.jickbangcopy_20210320.datas.Room
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
+
+    val mRooms = ArrayList<Room>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mRooms.add(Room(7500, "서울시 동대문구", 2, "동대문구의 방입니다."))
+        mRooms.add(Room(18500, "서울시 동대문구", 5, "동대문구의 방입니다."))
+        mRooms.add(Room(25000, "서울시 동대문구", 4, "동대문구의 방입니다."))
+        mRooms.add(Room(19500, "서울시 동대문구", 1, "동대문구의 방입니다."))
+        mRooms.add(Room(9500, "서울시 서대문구", 0, "서대문구의 방입니다."))
+        mRooms.add(Room(4000, "서울시 서대문구", -2, "서대문구의 방입니다."))
+        mRooms.add(Room(15600, "서울시 서대문구", 6, "서대문구의 방입니다."))
+        mRooms.add(Room(185000, "서울시 서대문구", 15, "서대문구의 방입니다."))
+        mRooms.add(Room(2000, "서울시 중구", -5, "중구의 방입니다."))
+        mRooms.add(Room(35000, "서울시 중구", 8, "중구의 방입니다."))
+        mRooms.add(Room(2000, "서울시 중구", -3, "중구의 방입니다."))
+        mRooms.add(Room(35000, "서울시 중구", 7, "중구의 방입니다."))
+
+
     }
 }
