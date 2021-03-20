@@ -13,11 +13,15 @@ class ViewRoomDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_room_detail)
 
-        val roodData = intent.getSerializableExtra("roomInfo") as Room
+        val roomData = intent.getSerializableExtra("roomInfo") as Room
 
-        priceTxt.text = roodData.getFormattedprice()
-        floorTxt.text = roodData.getFormattedFloor()
-        addressTxt.text = roodData.address
-        descTxt.text = roodData.description
+        priceTxt.text = roomData.getFormattedprice()
+
+        floorTxt.text = roomData.getFormattedFloor()
+
+        addressTxt.text = roomData.address
+
+        descTxt.text = roomData.description
+
     }
 }
